@@ -45,7 +45,7 @@ function App() {
     if (enteredEmoji in emojiObject) {
       setEmoticonMeaning(emojiObject[enteredEmoji])
     } else {
-      setEmoticonMeaning("Entered e,oji is not present in our database");
+      setEmoticonMeaning("Entered emoji is not present in our database");
     }
   }
 

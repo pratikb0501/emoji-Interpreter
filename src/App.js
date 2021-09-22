@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState } from 'react';
+import Footer from './components/Footer'
 
 let emojiObject = {
   "🙄": "Impatience",
@@ -74,6 +75,7 @@ function App() {
           </p>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

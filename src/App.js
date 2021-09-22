@@ -41,11 +41,15 @@ function App() {
   }
 
   function handleInput(e) {
-    let enteredEmoji = e.target.value;
-    if (enteredEmoji in emojiObject) {
-      setEmoticonMeaning(emojiObject[enteredEmoji])
+    if (e.target.value) {
+      let enteredEmoji = e.target.value;
+      if (enteredEmoji in emojiObject) {
+        setEmoticonMeaning(emojiObject[enteredEmoji])
+      } else {
+        setEmoticonMeaning("Entered emoji is not present in our database");
+      }
     } else {
-      setEmoticonMeaning("Entered emoji is not present in our database");
+      setEmoticonMeaning("Emoji Translation will be displayed here");
     }
   }
 
